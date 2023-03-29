@@ -89,7 +89,10 @@ section {
 img {
   max-width: 100%;
 }
-
+ul{
+  padding: 0;
+  margin: 0;
+}
 /*-------------------------
      RESET Default Styles
  --------------------------*/
@@ -1082,7 +1085,7 @@ h6 {
 }
 
 .heading-layout2 .heading__title {
-  font-size: 37px;
+  font-size: 35px;
 }
 
 .heading-layout3 .heading__title {
@@ -1167,16 +1170,13 @@ h6 {
 /*-------------------------
     page title 
 -------------------------*/
-.header-transparent + .page-title {
-  margin-top: -100px;
-}
 
 .pagetitle__subheading {
   font-size: 15px;
   font-weight: 700;
   color: #f9f9f9;
   display: inline-block;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .pagetitle__heading {
@@ -1198,15 +1198,14 @@ h6 {
   margin-bottom: 32px;
 }
 
-.page-title {
-  padding-top: 240px;
-  padding-bottom: 150px;
-}
 
-.page-title .breadcrumb-item + .breadcrumb-item::before {
+.page-title .breadcrumb-item + .breadcrumb-item::before ,.breadcrumb-item i{
   color: #ffffff;
 }
-
+.breadcrumb-item i {
+  margin-left: 10px;
+  font-size: 12px;
+}
 .page-title .breadcrumb-item.active {
   color: #f9f9f9;
 }
@@ -1217,12 +1216,7 @@ h6 {
 }
 
 .page-title .breadcrumb-item a:hover {
-  color: #0e2b5c;
-}
-
-.page-title .btn:not(.btn__xl) {
-  height: 60px;
-  line-height: 60px;
+  color: #f26624;
 }
 
 .page-title-layout2 {
@@ -1312,7 +1306,7 @@ h6 {
 }
 
 .page-title-layout10 .pagetitle__heading {
-  font-size: 37px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -1412,13 +1406,11 @@ h6 {
 /* Mobile Phones and tablets */
 @media (min-width: 320px) and (max-width: 767px) {
   .page-title {
-    padding-top: 50px;
-    padding-bottom: 50px;
+   padding:30px 0;
   }
   .page-title .pagetitle__subheading {
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 10px;
   }
   .page-title .pagetitle__desc {
     font-size: 14px;
@@ -2048,7 +2040,7 @@ input[type=radio] {
 
 .breadcrumb-item {
   position: relative;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -4927,7 +4919,7 @@ input[type=radio] {
 }
 
 .portfolio-item .portfolio-item__title {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 11px;
 }
 
@@ -5031,11 +5023,15 @@ input[type=radio] {
   transform: translateY(0);
 }
 
+.portfolio-layout2 .slick-track {
+  display: flex;
+}
 .portfolio-layout2 .portfolio-item {
-  padding: 40px 40px 0 40px;
+  padding: 34px 34px 0 34px;
   text-align: center;
   background-color: rgb(242 102 36 / 10%);
   margin-bottom: 90px;
+  height: inherit;
 }
 
 .portfolio-layout2 .portfolio-item .portfolio-item__content {
@@ -7540,10 +7536,8 @@ input[type=radio] {
 
 .services-layout3 .service-item {
   padding: 40px;
-  overflow: visible;
   margin-bottom: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  height: 100%;
 }
 
 .services-layout3 .service-item .service-item__title {
@@ -7579,7 +7573,7 @@ input[type=radio] {
   transform: translateY(-50%);
 }
 
-.services-layout3 .service-item:hover {
+.services-layout3 .service-item {
   z-index: 5;
   -webkit-box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.12);
           box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.12);
@@ -7715,7 +7709,7 @@ input[type=radio] {
 .awards .fancybox-item {
   border-radius: 5px;
   text-align: center;
-  padding: 48px 40px 37px;
+  padding:30px 20px 30px;
   background-color: #f9f9f9;
 }
 
@@ -7778,7 +7772,7 @@ input[type=radio] {
 @media screen and (max-width: 992px) {
   .awards .fancybox-item {
     padding: 28px 20px 27px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .awards .fancybox-item .fancybox-item__icon__img {
     margin-bottom: 15px;
@@ -8158,9 +8152,100 @@ input[type=radio] {
 }
 /*# sourceMappingURL=style.css.map */
 
+/*new css*/
+.portfolio-layout2.portfolio-layout2-carousel {
+  background: #f9f9f9;
+}
+.service-item__content ul {
+  padding-left: 15px;
+  margin: 0 0 20px;
+}
+
+.service-item__content ul p.service-item__desc {
+  margin-bottom: 5px !important;
+}
+
+.services-li{
+  margin-bottom: 30px;
+}
+.export-section {
+  padding: 80px 0;
+  background: #737476;
+}
 
 
+.export-headings {
+  color: #fff;
+}
+
+.export-headings h3 {
+  color: #fff;
+  font-size: 50px;
+  margin: 0;
+}
+
+.export-headings p {
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+.export-headings .action__btn-contact {
+  min-width: 150px !important;
+  display: inline-block;
+  height: 47px;
+  line-height: 47px;
+  font-size: 18px;
+}
+.btn__hi i {
+  margin-left: 10px;
+}
+.about__li a {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 17px;
+  color: #3051db;
+}
+
+.about__li a:hover {
+  color: #f26624;
+}
+
+.about__Text p {
+  font-size: 20px;
+}
+@media(max-width: 991px) {
+  .row-li .about__Text p{
+    margin-bottom: 10px;
+  }
+  .page-title-layout10 .breadcrumb {
+      margin-top: 50px;
+  }
+  .export-headings h3 {
+      font-size: 40px;
+  }
+  .export-section {
+      padding: 50px 0;
+  }
+}
 @media(max-width: 767px) {
+  .about__Text p {
+    font-size: 17px;
+}
+  .about__li a {
+      font-size: 17px;
+      margin: 0 0 10px;
+  }
+  .industries-layout2 .block-right {
+    padding-right: 0;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+  .awards-li:last-child .fancybox-item{
+    margin-bottom: 0;
+  }
+  .portfolio-layout2-carousel .slick-dots {
+    text-align: center;
+  }
   .custom-order-1 {
     order: 2  !important;
   }
@@ -8176,6 +8261,29 @@ input[type=radio] {
   }
 }
 @media(max-width: 575px) {
+  .page-title .pagetitle__subheading {
+    margin-bottom: 20px;
+  }
+  .export-section {
+      padding: 30px 0;
+  }
+  .export-headings h3 {
+    font-size: 35px;
+  }
+  .export-headings p {
+    font-size: 16px;
+    margin: 23px 0;
+  }
+  .services-li:last-child {
+      margin-bottom: 0;
+  }
+  .portfolio-layout2 .portfolio-item {
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  .sm-mt-2{
+    margin-top: 20px !important;
+  }
   .padding-sm-0{
     padding: 0 !important;
   }
@@ -8195,6 +8303,9 @@ input[type=radio] {
   }
 }
 @media(max-width: 480px) {
+  .export-headings h3 {
+    font-size: 27px;
+  }
   .heading-layout2 .heading__title {
       font-size: 23px;
   }
