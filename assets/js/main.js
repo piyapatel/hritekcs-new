@@ -45,7 +45,7 @@ $(function () {
     $navToggler.on('click', function () {
         $('.navbar-collapse').toggleClass('menu-opened');
     })
-
+// dcc
     /*==========   Sticky Navbar   ==========*/
     $(window).scroll(function() {
         var $stickyNavbar = $('.sticky-navbar'),
