@@ -2649,7 +2649,6 @@ input[type=radio] {
 }
 
 .navbar .nav__item {
-  position: relative;
   margin-right: 30px;
 }
 
@@ -3477,7 +3476,29 @@ input[type=radio] {
 @media only screen and (min-width: 992px) {
 
   /*updated css*/
-
+  .dropdown-menu h5 {
+      font-size: 18px;
+      position: relative;
+      padding-bottom: 10px;
+  }
+  .megamenu-left {
+      padding-right: 40px;
+  }
+  .dropdown-menu h5::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background: #f26624;
+      left: 0;
+      bottom: 0;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: fixed;
+    top: 68px;
+    border-top: 1px solid #ddd;
+    padding: 30px 0;
+  }
   .navbar .nav__item .nav__item-link:hover ,a.nav__item-link.active{
     color: #f26624 !important;
   }
@@ -3493,9 +3514,17 @@ input[type=radio] {
     visibility: visible;
   }
   #mainNavigation  .nav__item ul li a{
-    padding: 10px 20px;
+    padding: 4px 6px;
     position: relative;
     color: #2a3662;
+    word-break: break-word;
+    display: block;
+    white-space: unset;
+    font-size: 15px;
+  }
+  .dropdown-item:hover{
+    background-color: transparent;
+    color: #f26624 !important;
   }
   #mainNavigation .nav__item > ul > li:hover > a::before ,ul.dropdown-menu.second-level li:hover a::before{
     content: '';
@@ -3509,9 +3538,7 @@ input[type=radio] {
   #mainNavigation .nav__item > ul > li:hover > a {
       background: rgb(11 38 83 / 5%);
   }
-  #mainNavigation .nav__item ul li{
-    margin-bottom: 10px;
-  }
+
   #mainNavigation  .nav__item:hover> ul > li:hover ul{
       display: block;
       left:100%;
@@ -3519,15 +3546,13 @@ input[type=radio] {
       opacity: 1;
       visibility: visible;
   }
-  #mainNavigation .nav__item  ul {
+  #mainNavigation .nav__item > ul {
       box-shadow: unset !important;
       animation: fade-in .5s;
       opacity: 0;
       visibility: hidden;
   }
-  #mainNavigation .nav__item ul .second-level {
-      background-color: #e4e7ec;
-  }
+
   @-webkit-keyframes fade-in {
     0% {
         opacity: 0
@@ -3551,7 +3576,7 @@ input[type=radio] {
 
   .navbar .dropdown-menu {
     width: auto;
-    min-width: 235px;
+    min-width: 100%;
     -webkit-box-shadow: 0px 2px 6px 0px rgba(40, 40, 40, 0.1);
             box-shadow: 0px 2px 6px 0px rgba(40, 40, 40, 0.1);
     padding:18px 0 18px;
@@ -8212,6 +8237,9 @@ input[type=radio] {
 
 .about__Text p {
   font-size: 20px;
+}
+.list-style-none{
+  list-style: none !important;
 }
 @media(max-width: 991px) {
   .row-li .about__Text p{
