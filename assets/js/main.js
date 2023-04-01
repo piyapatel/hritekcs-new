@@ -274,8 +274,8 @@ $(function () {
         time: 4000
     });
 
-    /*==========  NiceSelect Plugin  ==========*/
-    $('select').niceSelect();
+    // /*==========  NiceSelect Plugin  ==========*/
+    // $('select').niceSelect();
 
     /*==========   portfolio Filtering and Sorting  ==========*/
     $("#filtered-items-wrap").mixItUp();
