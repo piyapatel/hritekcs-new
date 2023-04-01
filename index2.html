@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="Mintech  IT Solutions &  Services Template">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <title>Artifical Intelligence (AI)</title>
+  <title>Home</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700;800;900&family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
@@ -43,12 +43,12 @@
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav mr-auto ml-auto">
               <li class="nav__item">
-                <a href="index.html" class="nav__item-link">Home</a>               
+                <a href="index.html" class="nav__item-link active">Home</a>               
               </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a class="nav-link dropdown-toggle nav__item-link" href="#">
+              <li class="nav__item dropdown">
+                <a class="nav-link dropdown-toggle  nav__item-link" id="solutions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">
                Solutions <i class="d-block d-md-block d-xl-none d-lg-none fas fa-chevron-down"></i></a>
-                  <ul class="dropdown-menu d-block">               
+                  <ul class="dropdown-menu d-block" aria-labelledby="solutions">               
                     <li>
                       <div class="container">
                         <div class="row">
@@ -60,9 +60,9 @@
                           </div>
                           <div class="col-md-9 megamenu-right">
                             <div class="row">
-                              <div class="megamenu-li col-md-4">
-                                <h5>Trending <i class="d-block d-md-block d-xl-none d-lg-none fas fa-chevron-down"></i></h5>
-                                  <ul class="second-level list-style-none">
+                              <div class="megamenu-li dropdown-submenu col-md-4">
+                                <a class="dropdown-item dropdown-toggle" id="ind" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">Trending <i class="d-block d-md-block d-xl-none d-lg-none fas fa-chevron-down"></i></a>
+                                  <ul class="second-level dropdown-menu list-style-none" aria-labelledby="ind">
                                     <li><a class="dropdown-item d-block" href="#">Industry 4.0</a></li>
                                     <li><a class="dropdown-item d-block" href="#">Digital Transformation </a></li>
                                     <li><a class="dropdown-item d-block" href="#">Industrial Augmented Reality</a></li>
@@ -105,9 +105,8 @@
                 <a href="industries.html" class="dropdown-toggle nav__item-link">Industries</a>              
               </li><!-- /.nav-item -->
               <li class="nav__item dropdown">
-                <a class="nav-link dropdown-toggle nav__item-link active" href="#">
+                <a class="nav-link dropdown-toggle nav__item-link" href="#">
                   About Us <i class="d-block d-md-block d-xl-none d-lg-none fas fa-chevron-down"></i></a>
-
                   <ul class="dropdown-menu d-block">               
                     <li>
                       <div class="container">
@@ -169,201 +168,8 @@
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
 
-     <!-- ========================
-       page title 
-    =========================== -->
-    <section class="page-title page-title-layout1 bg-overlay bg-parallax">
-        <div class="bg-img"><img src="assets/images/page-titles/1.jpg" alt="background"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-              <h1 class="pagetitle__heading small">Boost the value of your data with our AI-based solutions</h1>
-              <p class="pagetitle__desc">Optimize with AI software that puts your technology and human insight to work.
-
-              </p>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <!-- ========================
-      About Layout 3
-    =========================== -->
-  
-    <section class="about-layout2 industries-layout2 pt-0 pb-0">
-        <div class="bg-gray pt-70 pb-70">
-          <div class="container">
-            <div class="row row-li">         
-              <div class="col-sm-12 col-md-6 col-xl-6">
-                <div class="block-right">
-                  <div class="heading-layout2 mb-30">
-                    <h3 class="heading__title mb-30">How we use artificial intelligence (AI) to boost agility</h3>
-                  </div>
-                  <div class="about__Text">
-                    <p>Our AI-based solutions give you the agility to respond to changing conditions in real-time for greater safety, profitability, and sustainability.</p>
-                    <p>
-                        Purpose-built for your industry and application requirements, our solutions integrate AI technology and machine-learning capabilities. This enables a constant state of self-optimization through autonomous and semi-autonomous processes.
-                    </p>
-                  </div>
-                
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-6">
-                <div class="about__img">
-                  <img src="assets/images/industries-1.jpeg" alt="industries">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-
-
-    <!-- ========================
-      Advantages section
-    =========================== -->
-
-    <section class="advantages pt-80 pb-70">
-        <div class="container">
-            <div class="heading mb-50 text-left">
-                <h3 class="heading__title">Advantages of AI-based solutions
-                </h3>
-                <p>With our industrial AI solutions, you’ll be able to better detect current performance issues and better predict future ones, minimizing risk of failure of critical assets and maximizing operational performance.
-                </p>
-              </div><!-- /heading -->
-              <div class="row advantages-ul">
-                <div class="col-6 col-sm-6 col-md-4 advantages-li">
-                    <div class="card">
-                        <h5>Detect performance issues</h5>
-                        <p>Identify anomalies in processes, equipment, and assets with advanced pattern recognition and machine learning.</p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 advantages-li">
-                    <div  class="card">
-                        <h5>Optimize processes</h5>
-                        <p>Improve yield and operational efficiency with first-principles analysis, machine learning, and purpose-built algorithms.</p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 advantages-li">
-                    <div  class="card">
-                        <h5>Make smarter decisions</h5>
-                        <p>Gain insight and minimize risk with root-cause analysis, prescriptive guidance, and risk-based decision support.</p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 advantages-li">
-                    <div  class="card">
-                        <h5>Predict the future</h5>
-                        <p>Forecast events, schedules, and scenarios with neural networks, deep-learning, and reinforcement learning.</p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 advantages-li">
-                    <div  class="card">
-                        <h5>Maximize machine learning</h5>
-                        <p>Get more from your intelligent machines by applying deep learning, machine learning, and neural nets.</p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 advantages-li">
-                    <div  class="card">
-                        <h5>Forecast remaining useful life</h5>
-                        <p>Estimate time to replacement or overhaul of an asset under the current operating conditions.</p>
-                    </div>
-                </div>
-              </div>
-        </div>
-    </section>
-
-
-    <!-- ========================
-      About Layout 3
-    =========================== -->
-  
-    <section class="about-layout2 ai-layout industries-layout2 pt-0 pb-0">
-        <div class="bg-gray pt-70 pb-70">
-          <div class="container">
-            <div class="row row-li"> 
-            <div class="col-sm-12 col-md-6 col-xl-6">
-                <div class="about__img">
-                      <img src="assets/images/industries-1.jpeg" alt="industries">
-                </div>
-            </div>        
-            <div class="col-sm-12 col-md-6 col-xl-6">
-                <div class="block-right">
-                  <div class="heading-layout2 mb-30">
-                    <h3 class="heading__title mb-30">Duke Energy saves $34 million with a single early-warning catch</h3>
-                  </div>
-                  <div class="about__Text">
-                    <p>The Monitoring and Diagnostics team for Duke Energy deployed AVEVA Predictive Analytics across 87% of its asset fleet.</p>
-                    <p>
-                        Purpose-built for your industry and application requirements, our solutions integrate AI technology and machine-learning capabilities. This enables a constant state of self-optimization through autonomous and semi-autonomous processes.
-                    </p>
-                    <div class="text-left">
-                        <a href="#" class="btn btn__secondary btn__bordered mt-4 sm-mt-2" tabindex="0">
-                          <span>Read the story</span>
-                        </a>
-                      </div>
-                  </div>
-                
-                </div>
-            </div>
-            
-            </div>
-          </div>
-        </div>
-    </section>
-
-
-     <!-- ========================
-      Advantages section
-    =========================== -->
-
-    <section class="advantages pt-80 pb-70">
-        <div class="container">
-            <div class="heading mb-50 text-left">
-                <h3 class="heading__title">AI resources</h3>
-               
-              </div><!-- /heading -->
-              <div class="row advantages-ul">
-                <div class="col-6 col-sm-6 col-md-4 advantages-li">
-                    <div  class="card">
-                        <h6>WEBINAR</h6>
-                        <span>Feb 28, 2022</span>
-                        <h5>Beyond artificial intelligence: AI and the digital twin</h5>
-                       <a href="#" class="btn btn__primary btn__primary-style2 btn_ action__btn-contact">Watch Now</a>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 advantages-li">
-                    <div  class="card">
-                        <h6>WHITE PAPER</h6>
-                        <h5>Artificial Intelligence: from Predictive to Prescriptive and Beyond</h5>
-                       <a href="#" class="btn btn__primary btn__primary-style2 btn_ action__btn-contact">Read More</a>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 advantages-li">
-                    <div  class="card">
-                        <h6>BLOG POST</h6>
-                        <h5>Artificial Intelligence, the new lens with which to optimize chemicals processes</h5>
-                        <a href="#" class="btn btn__primary btn__primary-style2 btn_ action__btn-contact">Read More</a>
-                    </div>
-                </div>
-                
-              </div>
-        </div>
-    </section>
-
-      <!-- =========================
-      export section
-      =========================== -->
-
-      <section class="export-section">
-        <div class="container">
-            <div class="export-headings">
-              <h3>Speak with an expert</h3>
-              <p>Connect with an hritekcs product expert to learn more about our offerings.</p>
-              <a href="#" class="btn btn__primary btn__primary-style2 btn_ action__btn-contact">Contact Us</a>
-            </div>
-        </div>
-      </section>
    
+
     <!-- ========================
       Footer
     ========================== -->

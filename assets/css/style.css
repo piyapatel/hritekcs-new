@@ -3327,13 +3327,16 @@ input[type=radio] {
   .navbar .nav__item .nav__item-link:before {
     display: none;
   }
+  header.header .container {
+      position: unset;
+  }
   .navbar .navbar-collapse {
     background-color: #2a3662;
     -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
             box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
     z-index: 50;
     padding: 15px 0;
-    position: fixed;
+    position: absolute;
     left: 0;
     width: 100%;
     top: 60px;
@@ -3343,6 +3346,8 @@ input[type=radio] {
     transition: 0.3s ease;
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
+    overflow-y: auto;
+    height: 540px;
   }
   .navbar .navbar-collapse .navbar-actions {
     padding: 0 15px;
@@ -3386,6 +3391,7 @@ input[type=radio] {
   }
   .navbar .navbar-nav .dropdown-menu.show {
     padding: 0;
+    display: block !important;
   }
   .navbar .navbar-nav .dropdown-menu li a{
     padding: 10px 30px;
@@ -8268,6 +8274,10 @@ input[type=radio] {
 }
 .pagetitle__heading.small {
   font-size: 50px;
+}
+.card .action__btn-contact::before {
+  content: '';
+  display: none;
 }
 /*AI section css*/
 /*code value section css*/

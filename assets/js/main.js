@@ -284,16 +284,18 @@ $(function () {
     });
 
     /*28/03-2023 changnes */
-    $(".megamenu-li h5").click(function(){
-        $(this).next().toggleClass('active');
-        $(this).find("i").toggleClass('active');
-      })
-      $(".dropdown-toggle.nav__item-link").click(function(){
-        $(this).next().toggleClass('active');
-        $(this).find("i").toggleClass('active');
-      })
-      $(".nav__item").click(function(){
-        $(".nav__item.active").removeClass('active');
-        $(this).toggleClass('active');
-      })
+    // $(".megamenu-li h5").click(function(){
+    //     $(".megamenu-li .second-level.active").removeClass('active');
+    //     $(this).next().toggleClass('active');
+    //     $(this).find("i").toggleClass('active');
+    //   })
+    //   $(".dropdown-toggle.nav__item-link").click(function(){
+    //     // $(".dropdown-menu.active").removeClass('active');
+    //     $(this).next().toggleClass('active');
+    //     $(this).find("i").toggleClass('active');
+    //   })
+    //   $(".nav__item").click(function(){
+    //     $(".nav__item.active").removeClass('active');
+    //     $(this).toggleClass('active');
+    //   })
 });
