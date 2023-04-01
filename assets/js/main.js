@@ -284,7 +284,7 @@ $(function () {
     });
 
     /*28/03-2023 changnes */
-    $(".second-toggle").click(function(){
+    $(".megamenu-li h5").click(function(){
         $(this).next().toggleClass('active');
         $(this).find("i").toggleClass('active');
       })
