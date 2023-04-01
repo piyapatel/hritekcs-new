@@ -3321,7 +3321,8 @@ input[type=radio] {
   }
   .navbar .nav__item .nav__item-link {
     color: #fff !important;
-    padding: 20px 15px;
+    padding: 14px 15px;
+    font-weight: 500;
   }
  
   .navbar .nav__item .nav__item-link:before {
@@ -3336,9 +3337,10 @@ input[type=radio] {
             box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
     z-index: 50;
     padding: 15px 0;
-    position: absolute;
+    position: fixed;
     left: 0;
-    width: 100%;
+    right: 0;
+    height: 100%;
     top: 60px;
     visibility: hidden;
     opacity: 0;
@@ -3346,8 +3348,10 @@ input[type=radio] {
     transition: 0.3s ease;
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
+  }
+  .navbar-nav{
+    height: 100%;
     overflow-y: auto;
-    height: 540px;
   }
   .navbar .navbar-collapse .navbar-actions {
     padding: 0 15px;
@@ -3397,6 +3401,7 @@ input[type=radio] {
     padding: 10px 30px;
     border-bottom: 1px solid #ddd;
     color: #212529;
+    font-size: 14px;
   }
   .navbar .mega-dropdown-menu .container {
     max-width: none;
@@ -3521,7 +3526,7 @@ input[type=radio] {
   }
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: fixed;
-    top: 68px;
+    top: 66px;
     border-top: 1px solid #ddd;
     padding: 30px 0;
   }
@@ -8496,12 +8501,8 @@ input[type=radio] {
   .about-layout3 .row-li {
       margin-bottom: 30px;
   }
-  .about-layout3  .row-li.odd .heading-layout2,.about-layout3 .row-li.odd .about__img {
-      padding: 0 0 0 0;
-  }
-  .odd-li-order2{
-    order: 2;
-  }
+ 
+
  .about-layout3 .about__img {
     margin-top: 40px;
     padding-right: 70px;
@@ -8520,12 +8521,13 @@ input[type=radio] {
 }
 
 .megamenu-li h5 {
-    margin-bottom: 0;
-    font-size: 17px;
-    padding: 8px 15px;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    align-items: center;
+  margin-bottom: 0;
+  font-size: 15px;
+  padding: 8px 15px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
 }
 .megamenu-li h5 i {
   margin-left: auto;
@@ -8560,6 +8562,12 @@ input[type=radio] {
   }
 }
 @media(max-width: 767px) {
+  .about-layout3  .row-li.odd .heading-layout2,.about-layout3 .row-li.odd .about__img {
+    padding: 0 0 0 0;
+}
+  .odd-li-order2{
+    order: 2;
+  }
   .advantages-li:last-child{
     margin: 0;
   }
