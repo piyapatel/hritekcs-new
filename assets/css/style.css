@@ -8236,6 +8236,24 @@ input[type=radio] {
 /*# sourceMappingURL=style.css.map */
 
 
+.digital-twin .technology-image {
+  max-width: 100%;
+}
+
+.digital-twin a.btn.btn__primary.btn__primary-style2 {
+  color: #f26624;
+  background: transparent;
+  padding: 0 !important;
+  min-width: unset;
+  height: auto;
+}
+.digital-twin a.btn.btn__primary.btn__primary-style2::before{
+  content:'';
+  display:none
+}
+.digital-twin .technology-solution-li:hover{
+  box-shadow: unset;
+}
 
 
 .tc-icon {
@@ -8263,6 +8281,50 @@ span.tc-numbered-subtitle {
   font-size: 30px;
 }
 
+.card-header:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f068";
+  font-weight: 900;
+  color: #000;
+  font-size: 19px;
+  position: absolute;
+  right: 26px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  line-height: unset;
+  display: flex;
+  align-items: center;
+}
+.card-header.active:after {
+  /* symbol for "collapsed" panels */
+  content: "\f067"; 
+}
+#accordion .card {
+  border: 0;
+  margin: 0 0 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+.card-header a {
+  font-size: 18px;
+  color: #363d42;
+  border: 0;
+}
+.card-body {
+  padding-top: 0;
+}
+.card-header {
+  position: relative;
+  border: 0;
+  background-color: #fff;
+  box-shadow: unset;
+  padding: 26px;
+}
+.card-body a {
+  display: block;
+  margin: 0 0 10px;
+}
 /*technology solution section css*/
 .technology-image {
   max-width: 229px;

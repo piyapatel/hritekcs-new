@@ -298,4 +298,7 @@ $(function () {
         $(".nav__item.active").removeClass('active');
         $(this).toggleClass('active');
       })
+      $(".card-header").click(function(){
+        $(this).toggleClass('active');
+      })
 });
