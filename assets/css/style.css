@@ -8283,7 +8283,7 @@ span.tc-numbered-subtitle {
 
 .card-header:after {
   font-family: "Font Awesome 5 Free";
-  content: "\f068";
+  content: "\f067";
   font-weight: 900;
   color: #000;
   font-size: 19px;
@@ -8298,7 +8298,7 @@ span.tc-numbered-subtitle {
 }
 .card-header.active:after {
   /* symbol for "collapsed" panels */
-  content: "\f067"; 
+  content: "\f068"; 
 }
 #accordion .card {
   border: 0;
@@ -8310,6 +8310,9 @@ span.tc-numbered-subtitle {
   font-size: 18px;
   color: #363d42;
   border: 0;
+  padding: 26px;
+  position: relative;
+  z-index: 1;
 }
 .card-body {
   padding-top: 0;
@@ -8319,11 +8322,12 @@ span.tc-numbered-subtitle {
   border: 0;
   background-color: #fff;
   box-shadow: unset;
-  padding: 26px;
+  padding: 0;
 }
 .card-body a {
   display: block;
   margin: 0 0 10px;
+  color: #f26624;
 }
 /*technology solution section css*/
 .technology-image {
