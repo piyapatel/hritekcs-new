@@ -8648,6 +8648,9 @@ span.tc-numbered-subtitle {
   font-size: 18px;
 }
 @media(max-width: 991px) {
+  .text-smm-center{
+    text-align: center !important;
+  }
   .post-item .post-item__img img {
     height: auto;
   }
