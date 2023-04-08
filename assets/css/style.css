@@ -8418,6 +8418,10 @@ span.tc-numbered-subtitle {
   content: '';
   display: none;
 }
+.max-50{
+  max-width: 50%;
+  margin: auto;
+}
 /*AI section css*/
 /*code value section css*/
 .second .content-li {padding-left: 34px;position: relative;}
