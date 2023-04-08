@@ -8647,6 +8647,39 @@ span.tc-numbered-subtitle {
 .vision-li p {
   font-size: 18px;
 }
+/*partner page css*/
+.nav-tabs .nav-link {
+  border-radius: 30px;
+  border: 0 !important;
+  padding: 15px 20px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.nav-tabs {
+  margin: 0 0 53px;
+}
+
+.nav-tabs .nav-link.active {
+  background: #f26624;
+  color: #fff;
+}
+.partner-ul{
+  margin-bottom: 30px;
+}
+.partner-ul .card {
+  box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.12);
+  border: 0;
+  padding: 30px;
+  height: 100%;
+}
+
+.partner-ul .card img {
+  max-width: unset;
+  margin: 0 0 20px;
+  width: 160px;
+}
+/*partner page css*/
 @media(max-width: 991px) {
   .text-smm-center{
     text-align: center !important;
