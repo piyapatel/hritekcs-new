@@ -8399,6 +8399,9 @@ span.tc-numbered-subtitle {
   height: 100%;
   border: 0;
 }
+.industry-advantage .advantages-li .card{
+  padding: 32px 32px 30px;
+}
 
 .advantages-li {
   margin: 0 0 30px;
@@ -8417,6 +8420,24 @@ span.tc-numbered-subtitle {
 }
 /*AI section css*/
 /*code value section css*/
+.second .content-li {padding-left: 34px;position: relative;}
+
+.second .content-li::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #f26624;
+    border-radius: 50%;
+    left: 0;
+    top: 9px;
+}
+.content-li p{
+  margin: 0;
+}
+.content-li {
+  margin: 0  0 50px;
+}
 .about-layout3  .row-li.odd .about__img {
   padding: 0 0 0 100px;
 }
@@ -8649,7 +8670,7 @@ span.tc-numbered-subtitle {
 span.tc-numbered-subtitle {
   font-size: 20px;
 }
-  .advantages-li .card{
+  .advantages-li .card,.industry-advantage .advantages-li .card{
     padding: 25px 25px 40px;
   }
   .card .action__btn-contact {
@@ -8827,6 +8848,18 @@ span.tc-numbered-subtitle {
   }
 }
 @media(max-width: 575px) {
+  .services-layout3 .service-item .service-item__content,.advantages-li .card{
+    text-align: center;
+  }
+  .services-layout3 .service-item__icon{
+    margin-bottom: 20px;
+  }
+  .content-li:last-child{
+    margin-bottom: 0;
+  }
+  .content-li {
+    margin: 0  0 30px;
+  }
   .about-layout3 .about__img {
     margin-top: 0;
     padding-right: 0;
