@@ -8697,6 +8697,10 @@ span.tc-numbered-subtitle {
   background: #f9f9f9 ;
   cursor: pointer;
 }
+.maximize-growth .about__img img {
+  height: 500px;
+  object-fit: cover;
+}
 /*partner page css*/
 @media(max-width: 991px) {
   .text-smm-center{
