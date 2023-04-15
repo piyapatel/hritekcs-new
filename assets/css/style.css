@@ -6017,6 +6017,11 @@ section.blog.blog-single .post-item .post-item__img img {
   font-size: 14px;
 }
 
+.post-item__meta__cat span {
+  color: #f26624;
+  margin-right: 5px;
+}
+
 .post-item .post-item__meta__cat a:hover {
   color: #0b2653;
 }
@@ -7075,7 +7080,7 @@ section.blog.blog-single .post-item .post-item__img img {
   padding-right: 100px;
 } */
 .about-layout3 .about__img{
-  padding-right: 100px;
+  padding-right: 0;
 }
 .about-layout1 .heading-layout2,
 .about-layout3 .heading-layout2 {
@@ -7463,6 +7468,7 @@ section.blog.blog-single .post-item .post-item__img img {
   margin-bottom: 15px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  margin-top: 25px;
 }
 
 .service-item .service-item__desc {
@@ -8454,7 +8460,7 @@ span.tc-numbered-subtitle {
   margin: 0  0 50px;
 }
 .about-layout3  .row-li.odd .about__img {
-  padding: 0 0 0 100px;
+  padding:0;
 }
 .about-layout3  .row-li.odd .heading-layout2{
   padding: 0 0 0 50px;
@@ -8573,10 +8579,11 @@ span.tc-numbered-subtitle {
 }
 .export-section {
   padding: 80px 0;
-  background: url(../images/about/cta-footer-iiot-machine-learning-arm.jpg) no-repeat;
+  /* background: url(../images/about/cta-footer-iiot-machine-learning-arm.jpg) no-repeat; */
+  background: #f9f9f9;
   position: relative;
 }
-.export-section::before{
+/* .export-section::before{
   content: '';
   background: rgb(0 0 0 / 50%);
   position: absolute;
@@ -8584,8 +8591,33 @@ span.tc-numbered-subtitle {
   bottom: 0;
   left: 0;
   right: 0;
+} */
+.export-li{
+  margin-left: auto;
+}
+.export-form input,.export-form textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.export-images img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.export-images {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+.export-form .form-group {
+  margin-bottom: 19px;
 }
 
+.export-form {
+  padding-left: 40px;
+}
 .export-headings {
   color: #fff;
   display: flex;
@@ -8619,11 +8651,11 @@ span.tc-numbered-subtitle {
   display: block;
   font-size: 20px;
   margin: 0 0 17px;
-  color: #3051db;
+  color: #f26624;
 }
 
 .about__li a:hover {
-  color: #f26624;
+  color: #000;
 }
 
 .about__Text p {
@@ -8694,7 +8726,7 @@ span.tc-numbered-subtitle {
   padding: 32px 32px 60px;
 }
 .advantages-li .card:hover {
-  background: #f9f9f9 ;
+  background: rgb(242 102 36 / 10%) ;
   cursor: pointer;
 }
 .maximize-growth .about__img img {
@@ -8703,6 +8735,9 @@ span.tc-numbered-subtitle {
 }
 /*partner page css*/
 @media(max-width: 991px) {
+  .export-form {
+      padding-left: 0;
+  }
   .text-smm-center{
     text-align: center !important;
   }
@@ -8758,7 +8793,7 @@ span.tc-numbered-subtitle {
 
  .about-layout3 .about__img {
     margin-top: 40px;
-    padding-right: 70px;
+    padding-right: 0;
     max-width: 450px;
     margin: auto;
 }
@@ -8815,6 +8850,26 @@ span.tc-numbered-subtitle {
   }
 }
 @media(max-width: 767px) {
+  .export-images {
+    padding-right: 0;
+}
+  .export-form h3 {
+      color: #fff;
+      font-size: 30px;
+  }
+  .export-images::before {
+    content: '';
+    position: absolute;
+    background: rgb(0 0 0 / 70%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .export-li {
+    margin-left: auto;
+    color: #fff;
+  }
   .nav-tabs {
     margin: 0 0 23px;
   }
