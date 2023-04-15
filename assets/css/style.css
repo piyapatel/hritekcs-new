@@ -4162,9 +4162,21 @@ input[type=radio] {
 
 /*updated css 28/03/2023*/
 .bg-img-video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.bg-img-video::before {
+  content: '';
   position: absolute;
+  background: rgb(0 0 0 / 50%);
   top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 .bg-img-video video{
   height: 100%;
@@ -4312,7 +4324,7 @@ input[type=radio] {
   .slider .slide-item {
     min-height: 0;
     padding: 30px 10px;
-    height: auto !important;
+    height: 300px !important;
   }
   .slider .slide-item__desc {
     font-size: 15px;
@@ -8988,6 +9000,16 @@ span.tc-numbered-subtitle {
   }
 }
 @media(max-width: 575px) {
+  section {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+  .slider .slide-item {
+    min-height: 0;
+    padding: 30px 10px;
+    height: 300px !important;
+  }
   .advantages-li img {
     margin: auto auto 14px;
 }
@@ -9101,6 +9123,11 @@ span.tc-numbered-subtitle {
   }
 }
 @media(max-width: 480px) {
+  .slider .slide-item {
+    min-height: 0;
+    padding: 0 !important;
+    height: 150px !important;
+  }
   .tc-content {
       width: 100%;
       margin: 12px 0 0;
