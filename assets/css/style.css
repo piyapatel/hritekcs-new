@@ -4168,16 +4168,7 @@ input[type=radio] {
     left: 0;
     right: 0;
 }
-.bg-img-video::before {
-  content: '';
-  position: absolute;
-  background: rgb(0 0 0 / 50%);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
+
 .bg-img-video video{
   height: 100%;
   width: 100%;
