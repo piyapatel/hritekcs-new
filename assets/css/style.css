@@ -747,9 +747,7 @@ select {
   .mt-150 {
     margin-top: 75px !important;
   }
-  .mb-30 {
-    margin-bottom: 15px !important;
-  }
+ 
   .mb-40 {
     margin-bottom: 20px !important;
   }
@@ -1073,6 +1071,11 @@ h6 {
 .heading__title {
   font-size: 34px;
   margin-bottom: 20px;
+}
+.large-headings{
+  font-size: 46px;
+  margin-bottom: 20px;
+  font-weight: 900;
 }
 
 .heading__title .underlined-text {
@@ -8289,6 +8292,7 @@ section.blog.blog-single .post-item .post-item__img img {
   display: flex;
   align-items: center;
   margin: 0 0 30px;
+  text-align: center;
 }
 
 .tc-content {
@@ -8719,13 +8723,15 @@ span.tc-numbered-subtitle {
 .partner-ul{
   margin-bottom: 30px;
 }
-.partner-ul .card {
+.partner-ul .card ,.card{
   box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.12);
   border: 0;
   padding: 30px;
   height: 100%;
 }
-
+.card-li-box .card{
+  padding: 20px;
+}
 .partner-ul .card img {
   max-width: unset;
   margin: 0 0 20px;
@@ -8734,7 +8740,7 @@ span.tc-numbered-subtitle {
 .advantages-ul .advantages-li .card {
   padding: 32px 32px 60px;
 }
-.advantages-li .card:hover {
+.advantages-li .card:hover ,.card:hover {
   background: rgb(242 102 36 / 10%) ;
   cursor: pointer;
 }
@@ -9125,6 +9131,7 @@ span.tc-numbered-subtitle {
   }
   .tc-icon-list{
     flex-wrap: wrap;
+    padding: 15px;
   }
   .advantages-li{
     max-width: 100%;
