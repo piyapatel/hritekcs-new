@@ -8997,6 +8997,9 @@ span.tc-numbered-subtitle {
   }
 }
 @media(max-width: 575px) {
+  .advantages-li .action__btn-contact {
+    text-align: center;
+  }
   section {
     position: relative;
     padding-top: 30px;
